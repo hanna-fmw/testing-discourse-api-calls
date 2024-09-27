@@ -53,10 +53,10 @@ export default async function PostList() {
 						<Link
 							href={`${process.env.DISCOURSE_URL}/t/${post.topic_slug}/${post.topic_id}`}
 							className='block'>
-							<h4 className='text-lg text-black font-semibold mb-1'>{post.topic_title}</h4>
-							<p className='text-sm text-gray-600 mb-2'>Post id: {post.id}</p>
-							<p className='text-sm text-gray-600 mb-2'>By user: {post.username}</p>
-							<p className='text-sm text-gray-700'>{post.raw.substring(0, 100)}...</p>
+							<h4 className='text-lg text-gray-400 font-semibold mb-1'>{post.topic_title}</h4>
+							<p className='text-sm text-gray-500 mb-2'>Post id: {post.id}</p>
+							<p className='text-sm text-gray-500 mb-2'>By user: {post.username}</p>
+							<p className='text-sm text-gray-500'>{post.raw.substring(0, 100)}...</p>
 						</Link>
 					</li>
 				))}
